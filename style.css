@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Mengatur padding dan border dalam ukuran elemen */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Gaya font untuk keseluruhan halaman */
+  background-color: #f3f4f6; /* Warna latar belakang yang lembut */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Pastikan body memiliki tinggi 100% dari viewport */
+}
+#angka {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+
+.kirim {
+  display: block; /* Atur display menjadi block agar lebih mudah diatur */
+  width: 100px; /* Atur lebar tombol */
+  padding: 10px 15px; /* Berikan padding agar tombol lebih besar */
+  margin: 20px auto; /* Berikan margin otomatis untuk memusatkan */
+  background-color: #4caf50; /* Warna latar belakang hijau */
+  color: white; /* Warna teks putih */
+  border: none; /* Hilangkan border */
+  border-radius: 5px; /* Berikan sudut tumpul */
+  font-size: 16px; /* Ukuran teks */
+  cursor: pointer; /* Ganti kursor saat hover */
+  transition: background-color 0.3s; /* Animasi transisi saat hover */
+}
+
+.kirim:hover {
+  background-color: #45a049; /* Warna saat hover */
+}
+
+.pilihan {
+  display: flex;
+  flex-direction: column; /* Menyusun elemen anak secara vertikal */
+  align-items: center; /* Menyejajarkan elemen anak secara horizontal di tengah */
+  text-align: center;
+  background-color: #ffffff; /* Warna latar belakang putih */
+  padding: 20px; /* Ruang di dalam container */
+  border-radius: 10px; /* Membuat sudut lebih membulat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan bayangan halus */
+}
+
+.pilihan h1 {
+  margin-bottom: 20px;
+  color: #333; /* Warna teks yang lebih halus */
+  font-size: 24px; /* Ukuran font */
+}
+
+.pilihan .button-container {
+  display: flex;
+  gap: 10px; /* Jarak antara tombol */
+}
+
+.pilihan .IYA,
+.pilihan .tidak {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff; /* Warna teks putih */
+  background-color: #3498db; /* Warna latar belakang tombol */
+  border: none;
+  border-radius: 5px; /* Membuat sudut tombol lebih membulat */
+  cursor: pointer; /* Menunjukkan bahwa elemen dapat diklik */
+  transition: background-color 0.3s ease; /* Animasi transisi untuk efek hover */
+}
+
+.pilihan .IYA:hover,
+.pilihan .tidak:hover {
+  background-color: #2980b9; /* Warna latar belakang saat hover */
+}
+
+.container {
+  text-align: center;
+}
+
+.container h4 {
+  margin-top: 5px;
+  color: #333; /* Warna teks yang lebih halus */
+}
+
+.container .nilai {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column; /* Mengubah arah flex untuk vertikal */
+  align-items: center;
+  justify-content: center;
+  width: 40vw;
+  max-width: 400px; /* Batasan lebar maksimum */
+  height: 50vh;
+  background-color: #e74c3c; /* Warna merah yang lebih menarik */
+  border-radius: 10px; /* Membuat sudut elemen lebih membulat */
+  padding: 20px; /* Memberikan ruang di dalam container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan bayangan halus */
+}
+
+.container .nilai label {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #fff; /* Warna teks label putih */
+}
+
+.container .nilai input[type="text"] {
+  width: 80%; /* Ukuran input agar proporsional */
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ecf0f1; /* Warna border yang lembut */
+  border-radius: 5px;
+  outline: none; /* Menghilangkan garis tepi default */
+  margin-top: 10px;
+  transition: all 0.3s ease; /* Animasi transisi untuk efek hover */
+}
+
+.container .nilai input[type="text"]:focus {
+  border-color: #3498db; /* Ubah warna border saat input aktif */
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.5); /* Tambahkan bayangan saat fokus */
+}
+.gagal {
+  display: flex;
+  margin-top: 0.1em;
+  gap: 10px;
+  justify-content: center;
+}
+h1.tidak {
+  text-align: center;
+  line-height: 100vh;
+}
+.none {
+  display: none;
+}
