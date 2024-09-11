@@ -3,6 +3,7 @@ const container = document.querySelector(".container");
 const tidak = document.querySelector(".tidakmau");
 const inputElement = document.getElementById("angka");
 const submitButton = document.getElementById("submitBtn");
+const kalah = document.querySelector(".gagal H3.jumlah");
 
 // console.log(inputElement);
 function komputer() {
@@ -21,10 +22,15 @@ const milih = pilihan.addEventListener("click", function (e) {
       const inputValue = parseInt(inputElement.value);
       if (inputValue > angka) {
         alert("nilai yang anda masukan lebih besar  dari komputer");
+        kesempatan++;
       } else if (inputValue < angka) {
         alert("nilai yang anda masukan lebih kecil  dari komputer");
+        kesempatan++;
       } else if (inputValue === angka) {
         alert("SELAMAT ANDA MENANG");
+      }
+      if (kesempatan == 5) {
+        alert("ANDA KALAH COBA LAIN KALI");
       }
     });
   } else if (pi == "tidak") {
