@@ -39,6 +39,7 @@ submitButton.addEventListener("click", function () {
       alert("Nilai yang anda masukkan lebih kecil dari komputer");
     } else if (inputValue === angkaKomputer) {
       alert("SELAMAT ANDA MENANG");
+      window.close;
       return; // Berhenti jika pemain menang
     }
     kesempatan++; // Tambahkan kesempatan
@@ -48,5 +49,6 @@ submitButton.addEventListener("click", function () {
   // Jika kesempatan habis
   if (kesempatan >= 5) {
     alert("ANDA KALAH, COBA LAIN KALI");
+    window.close();
   }
 });
