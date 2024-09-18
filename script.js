@@ -29,7 +29,7 @@ const milih = pilihan.addEventListener("click", function (e) {
       } else if (inputValue === angka) {
         alert("SELAMAT ANDA MENANG");
       }
-      if (kesempatan == 5) {
+      if (kesempatan > 4) {
         alert("ANDA KALAH COBA LAIN KALI");
       }
     });
