@@ -3,7 +3,8 @@ const container = document.querySelector(".container");
 const tidak = document.querySelector(".tidakmau");
 const inputElement = document.getElementById("angka");
 const submitButton = document.getElementById("submitBtn");
-const kalah = document.querySelectorAll(".gagal H3.kesempatan");
+const kalah = document.querySelector(".kesempatan");
+// console.log(kalah);
 
 function komputer() {
   return Math.round(Math.random() * 9) + 1; // Menghasilkan angka 1-10
@@ -51,7 +52,7 @@ submitButton.addEventListener("click", function () {
   }
 
   // Jika kesempatan habis
-  if (kesempatan <= 0) {
+  if (kesempatan === 0) {
     alert("ANDA KALAH, COBA LAIN KALI");
     window.close();
   }
